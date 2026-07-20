@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="CMWSSB">
+  <defs>
+    <linearGradient id="cmGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5c542"/>
+      <stop offset="100%" stop-color="#d4a017"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="#0a2463"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="url(#cmGold)" stroke-width="4"/>
+  <circle cx="100" cy="100" r="78" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.5"/>
+  <!-- Drop / water symbol -->
+  <path d="M100 48 C100 48 72 86 72 108 C72 124 84 136 100 136 C116 136 128 124 128 108 C128 86 100 48 100 48 Z" fill="url(#cmGold)"/>
+  <circle cx="92" cy="104" r="8" fill="#ffffff" opacity="0.35"/>
+  <text x="100" y="168" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#ffffff" letter-spacing="1">CMWSSB</text>
+</svg>

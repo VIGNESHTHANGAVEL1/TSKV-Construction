@@ -935,6 +935,17 @@ ul {
   margin-bottom: 12px;
 }
 
+.client__logo {
+  display: block;
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background: #ffffff;
+  padding: 6px;
+}
+
 .client__card h4 {
   font-family: var(--font-primary);
   font-size: 18px;
