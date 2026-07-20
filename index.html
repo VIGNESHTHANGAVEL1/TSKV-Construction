@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TSKV Construction Private Limited - Leading infrastructure and civil engineering company specializing in water supply, pipelines, EPC projects across India.">
+  <title>TSKV Construction Private Limited | Building Trust • Delivering Quality • Creating Value</title>
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="header__logo">
+        <img src="assets/images/logo.png" alt="TSKV Construction Private Limited">
+      </a>
+      <nav class="header__nav" id="nav">
+        <ul class="header__menu">
+          <li><a href="#home" class="active">HOME</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#clients">CLIENTS</a></li>
+          <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+      </nav>
+      <a href="tel:+919443889093" class="header__phone">
+        <i class="fas fa-phone"></i>
+        <span>94438 89093</span>
+      </a>
+      <button class="header__toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero__slider">
+      <div class="hero__slide active" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=80');">
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+          <span class="hero__label">WELCOME TO</span>
+          <h1 class="hero__title">TSKV CONSTRUCTION<br><span>PRIVATE LIMITED</span></h1>
+          <p class="hero__subtitle">Engineering Excellence. Building Tomorrow.</p>
+          <p class="hero__desc">Building a better tomorrow with quality construction, innovative solutions and a commitment to excellence.</p>
+          <div class="hero__features">
+            <div class="hero__feature">
+              <i class="fas fa-hard-hat"></i>
+              <span>Quality Construction</span>
+            </div>
+            <div class="hero__feature">
+              <i class="fas fa-clock"></i>
+              <span>Timely Delivery</span>
+            </div>
+            <div class="hero__feature">
+              <i class="fas fa-smile"></i>
+              <span>Customer Satisfaction</span>
+            </div>
+          </div>
+          <div class="hero__actions">
+            <a href="#services" class="btn btn--primary">OUR SERVICES <i class="fas fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn--outline">REQUEST A QUOTE <i class="fas fa-paper-plane"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80');">
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+          <span class="hero__label">OUR EXPERTISE</span>
+          <h1 class="hero__title">WATER SUPPLY &<br><span>PIPELINE PROJECTS</span></h1>
+          <p class="hero__desc">Specializing in water supply schemes, transmission pipelines, EPC contracts, and large-scale infrastructure development across India.</p>
+          <div class="hero__actions">
+            <a href="#services" class="btn btn--primary">OUR SERVICES <i class="fas fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn--outline">REQUEST A QUOTE <i class="fas fa-paper-plane"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__slide" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920&q=80');">
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+          <span class="hero__label">INFRASTRUCTURE</span>
+          <h1 class="hero__title">CIVIL & EPC<br><span>CONSTRUCTION</span></h1>
+          <p class="hero__desc">Committed to quality, safety, and timely project delivery for government organizations and public sector undertakings.</p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">VIEW PROJECTS <i class="fas fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn--outline">REQUEST A QUOTE <i class="fas fa-paper-plane"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+    <button class="hero__arrow hero__arrow--next" id="heroNext" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+    <div class="hero__dots" id="heroDots"></div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stats__item">
+        <div class="stats__icon"><i class="fas fa-building"></i></div>
+        <div class="stats__info">
+          <span class="stats__number" data-target="10">0</span><span class="stats__suffix">+</span>
+          <p>Years of Experience</p>
+        </div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__icon"><i class="fas fa-clipboard-check"></i></div>
+        <div class="stats__info">
+          <span class="stats__number" data-target="100">0</span><span class="stats__suffix">+</span>
+          <p>Projects Completed</p>
+        </div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__icon"><i class="fas fa-users"></i></div>
+        <div class="stats__info">
+          <span class="stats__number" data-target="50">0</span><span class="stats__suffix">+</span>
+          <p>Skilled Professionals</p>
+        </div>
+      </div>
+      <div class="stats__item">
+        <div class="stats__icon"><i class="fas fa-handshake"></i></div>
+        <div class="stats__info">
+          <span class="stats__number" data-target="100">0</span><span class="stats__suffix">%</span>
+          <p>Client Satisfaction</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container about__grid">
+      <div class="about__content">
+        <span class="section__label">ABOUT US</span>
+        <h2 class="section__title">Building Trust. Delivering Quality. <span>Creating Value.</span></h2>
+        <p>TSKV Construction Private Limited is a leading infrastructure and civil engineering company specializing in water supply, transmission pipelines, EPC projects, and large-scale infrastructure development across India. We are committed to quality, safety, and timely project delivery.</p>
+        <p>TSKV Construction Private Limited is dedicated to delivering innovative, sustainable, and high-quality construction solutions. With a team of experienced professionals, we execute projects for government organizations and public sector undertakings while maintaining the highest engineering standards.</p>
+        <div class="about__expertise">
+          <h3>Our Expertise</h3>
+          <ul class="expertise__list">
+            <li><i class="fas fa-check"></i> Water Supply Projects</li>
+            <li><i class="fas fa-check"></i> Transmission &amp; Distribution Pipelines</li>
+            <li><i class="fas fa-check"></i> EPC Contracts</li>
+            <li><i class="fas fa-check"></i> Civil Construction</li>
+            <li><i class="fas fa-check"></i> Infrastructure Development</li>
+            <li><i class="fas fa-check"></i> Trenchless Technology</li>
+          </ul>
+        </div>
+        <div class="about__vm">
+          <div class="vm__card">
+            <div class="vm__icon"><i class="fas fa-eye"></i></div>
+            <h3>Vision</h3>
+            <p>To become one of India's most trusted infrastructure construction companies.</p>
+          </div>
+          <div class="vm__card">
+            <div class="vm__icon"><i class="fas fa-bullseye"></i></div>
+            <h3>Mission</h3>
+            <ul>
+              <li>Deliver quality projects on time.</li>
+              <li>Ensure customer satisfaction.</li>
+              <li>Maintain the highest safety standards.</li>
+              <li>Adopt modern construction technologies.</li>
+            </ul>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn--secondary">LEARN MORE ABOUT US <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="about__visual">
+        <div class="about__gallery">
+          <div class="gallery__item gallery__item--1">
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=80" alt="Water treatment facility">
+          </div>
+          <div class="gallery__item gallery__item--2">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80" alt="Pipeline installation">
+          </div>
+          <div class="gallery__item gallery__item--3">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Road construction">
+          </div>
+        </div>
+        <div class="about__badge">
+          <i class="fas fa-shield-alt"></i>
+          <div>
+            <strong>SAFETY FIRST</strong>
+            <span>We prioritize safety in every project we deliver.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <span class="section__label">OUR SERVICES</span>
+        <h2 class="section__title section__title--white">Comprehensive Construction Solutions</h2>
+      </div>
+      <div class="services__grid">
+        <div class="service__card">
+          <div class="service__image">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&q=80" alt="Water Supply Schemes">
+            <div class="service__icon"><i class="fas fa-tint"></i></div>
+          </div>
+          <div class="service__body">
+            <h3>Water Supply Schemes</h3>
+            <p>Design and execution of water supply schemes and distribution systems for urban and rural areas.</p>
+            <a href="#contact" class="service__link"><i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="service__card">
+          <div class="service__image">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&q=80" alt="Pipeline Works">
+            <div class="service__icon"><i class="fas fa-water"></i></div>
+          </div>
+          <div class="service__body">
+            <h3>MS, DI, CI &amp; HDPE Pipeline Works</h3>
+            <p>Expertise in MS, DI, CI, HDPE pipelines and trenchless crossings for transmission and distribution.</p>
+            <a href="#contact" class="service__link"><i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="service__card">
+          <div class="service__image">
+            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=500&q=80" alt="Civil Construction">
+            <div class="service__icon"><i class="fas fa-building"></i></div>
+          </div>
+          <div class="service__body">
+            <h3>Civil &amp; Structural Works</h3>
+            <p>Industrial structures, buildings, RCC works, earthworks, and comprehensive civil construction.</p>
+            <a href="#contact" class="service__link"><i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="service__card">
+          <div class="service__image">
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&q=80" alt="EPC Projects">
+            <div class="service__icon"><i class="fas fa-cogs"></i></div>
+          </div>
+          <div class="service__body">
+            <h3>EPC Projects</h3>
+            <p>End-to-end Engineering, Procurement &amp; Construction solutions for government and industrial projects.</p>
+            <a href="#contact" class="service__link"><i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="service__card">
+          <div class="service__image">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=500&q=80" alt="Infrastructure Development">
+            <div class="service__icon"><i class="fas fa-road"></i></div>
+          </div>
+          <div class="service__body">
+            <h3>Infrastructure Development</h3>
+            <p>Pumping stations, ESR, roads, drainage, utility works, and government infrastructure projects.</p>
+            <a href="#contact" class="service__link"><i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="services__extra">
+        <div class="services__extra-item"><i class="fas fa-industry"></i> Pumping Stations</div>
+        <div class="services__extra-item"><i class="fas fa-database"></i> Elevated Service Reservoirs (ESR)</div>
+        <div class="services__extra-item"><i class="fas fa-project-diagram"></i> Trenchless Pipeline Installation</div>
+        <div class="services__extra-item"><i class="fas fa-warehouse"></i> Industrial Infrastructure</div>
+        <div class="services__extra-item"><i class="fas fa-landmark"></i> Government Infrastructure Projects</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why section">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <span class="section__label">WHY CHOOSE US</span>
+        <h2 class="section__title">Your Trusted Construction Partner</h2>
+      </div>
+      <div class="why__grid">
+        <div class="why__item">
+          <div class="why__icon"><i class="fas fa-user-tie"></i></div>
+          <h3>Experienced Engineers</h3>
+          <p>Skilled professionals with extensive expertise in infrastructure and civil engineering projects.</p>
+        </div>
+        <div class="why__item">
+          <div class="why__icon"><i class="fas fa-certificate"></i></div>
+          <h3>Quality Assurance</h3>
+          <p>Rigorous quality control processes ensuring the highest engineering standards on every project.</p>
+        </div>
+        <div class="why__item">
+          <div class="why__icon"><i class="fas fa-clock"></i></div>
+          <h3>Timely Delivery</h3>
+          <p>Committed to completing projects on schedule without compromising on quality or safety.</p>
+        </div>
+        <div class="why__item">
+          <div class="why__icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Safety First</h3>
+          <p>Maintaining the highest safety standards across all construction sites and operations.</p>
+        </div>
+        <div class="why__item">
+          <div class="why__icon"><i class="fas fa-tools"></i></div>
+          <h3>Modern Equipment</h3>
+          <p>State-of-the-art machinery and modern construction technologies for efficient execution.</p>
+        </div>
+        <div class="why__item">
+          <div class="why__icon"><i class="fas fa-smile"></i></div>
+          <h3>Customer Satisfaction</h3>
+          <p>Dedicated to exceeding client expectations and building long-term partnerships.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <span class="section__label">PROJECTS</span>
+        <h2 class="section__title">Our Portfolio of Excellence</h2>
+      </div>
+      <div class="projects__grid">
+        <div class="project__card">
+          <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80" alt="Water Transmission Mains">
+          <div class="project__overlay">
+            <h3>Water Transmission Mains</h3>
+            <p>Large-scale water transmission pipeline projects across Tamil Nadu and Karnataka.</p>
+          </div>
+        </div>
+        <div class="project__card">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Distribution Networks">
+          <div class="project__overlay">
+            <h3>Distribution Networks</h3>
+            <p>Comprehensive water distribution network installations for municipal corporations.</p>
+          </div>
+        </div>
+        <div class="project__card">
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80" alt="Civil Infrastructure">
+          <div class="project__overlay">
+            <h3>Civil Infrastructure</h3>
+            <p>Industrial and public infrastructure development including buildings and RCC works.</p>
+          </div>
+        </div>
+        <div class="project__card">
+          <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600&q=80" alt="Railway Utility Crossings">
+          <div class="project__overlay">
+            <h3>Railway Utility Crossings</h3>
+            <p>Trenchless pipeline crossings under railway tracks for utility installations.</p>
+          </div>
+        </div>
+        <div class="project__card">
+          <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=80" alt="Industrial Construction">
+          <div class="project__overlay">
+            <h3>Industrial Construction</h3>
+            <p>Complete industrial infrastructure solutions for manufacturing and utility sectors.</p>
+          </div>
+        </div>
+        <div class="project__card">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80" alt="Government EPC Projects">
+          <div class="project__overlay">
+            <h3>Government EPC Projects</h3>
+            <p>End-to-end EPC contracts for government organizations and public sector undertakings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients Section -->
+  <section class="clients section" id="clients">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <span class="section__label">OUR CLIENTS</span>
+        <h2 class="section__title section__title--white">Trusted by Leading Organizations</h2>
+      </div>
+      <div class="clients__grid">
+        <div class="client__card">
+          <i class="fas fa-water"></i>
+          <h4>TWAD</h4>
+          <p>Tamil Nadu Water Supply and Drainage Board</p>
+        </div>
+        <div class="client__card">
+          <i class="fas fa-faucet"></i>
+          <h4>CMWSSB</h4>
+          <p>Chennai Metropolitan Water Supply and Sewerage Board</p>
+        </div>
+        <div class="client__card">
+          <i class="fas fa-landmark"></i>
+          <h4>PWD</h4>
+          <p>Public Works Department</p>
+        </div>
+        <div class="client__card">
+          <i class="fas fa-bolt"></i>
+          <h4>MASE</h4>
+          <p>Maharashtra State Electricity Board</p>
+        </div>
+        <div class="client__card">
+          <i class="fas fa-building-columns"></i>
+          <h4>CPWD</h4>
+          <p>Central Public Works Department</p>
+        </div>
+        <div class="client__card">
+          <i class="fas fa-train"></i>
+          <h4>Indian Railways</h4>
+          <p>Indian Railways</p>
+        </div>
+        <div class="client__card">
+          <i class="fas fa-shower"></i>
+          <h4>BWSSB</h4>
+          <p>Bangalore Water Supply and Sewerage Board</p>
+        </div>
+        <div class="client__card">
+          <i class="fas fa-tint"></i>
+          <h4>KWA</h4>
+          <p>Kerala Water Authority</p>
+        </div>
+        <div class="client__card">
+          <i class="fas fa-plug"></i>
+          <h4>TNEB</h4>
+          <p>Tamil Nadu Electricity Board</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <span class="section__label">CONTACT</span>
+        <h2 class="section__title">Get In Touch With Us</h2>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__info">
+          <h3>TSKV Construction Private Limited</h3>
+          <p class="contact__tagline">Building Trust • Delivering Quality • Creating Value</p>
+          <div class="contact__details">
+            <div class="contact__item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Address</strong>
+                <p>4/121, TSKV Illam, Kumbakottai, Perrapancholai (P.O), Rasipuram (T.K), Namakkal – 636113</p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>Phone</strong>
+                <p><a href="tel:+919443889093">+91 9443889093</a></p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:tskvconstruction.1234@yahoo.com">tskvconstruction.1234@yahoo.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form" id="contactForm">
+          <div class="form__group">
+            <input type="text" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form__group">
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form__group">
+            <input type="tel" name="phone" placeholder="Your Phone">
+          </div>
+          <div class="form__group">
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">SEND MESSAGE <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/images/logo.png" alt="TSKV Construction">
+        <p>Building Trust • Delivering Quality • Creating Value</p>
+      </div>
+      <div class="footer__links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__services">
+        <h4>Services</h4>
+        <ul>
+          <li>Water Supply Projects</li>
+          <li>Pipeline Works</li>
+          <li>Civil Construction</li>
+          <li>EPC Projects</li>
+          <li>Infrastructure Development</li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4>Contact</h4>
+        <p><i class="fas fa-phone"></i> +91 9443889093</p>
+        <p><i class="fas fa-envelope"></i> tskvconstruction.1234@yahoo.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Namakkal, Tamil Nadu – 636113</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 TSKV Construction Private Limited. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
