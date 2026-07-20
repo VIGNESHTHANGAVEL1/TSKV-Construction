@@ -4,8 +4,8 @@ set -euo pipefail
 # Deploy TSKV Construction website to AWS S3 + CloudFront
 # Usage: ./scripts/deploy.sh [bucket-name] [cloudfront-distribution-id]
 
-BUCKET_NAME="${1:-${S3_BUCKET:-tskv-construction-website}}"
-CLOUDFRONT_ID="${2:-${CLOUDFRONT_DISTRIBUTION_ID:-}}"
+BUCKET_NAME="${1:-${S3_BUCKET:-tskv-construction-website-784060240662}}"
+CLOUDFRONT_ID="${2:-${CLOUDFRONT_DISTRIBUTION_ID:-E2E8QXA2HSJGTT}}"
 
 echo "==> Deploying to S3 bucket: ${BUCKET_NAME}"
 
