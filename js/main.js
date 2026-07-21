@@ -136,7 +136,7 @@
       `Name: ${name}\nEmail: ${email}\nPhone: ${phone || 'N/A'}\n\nMessage:\n${message}`
     );
 
-    window.location.href = `mailto:tskvconstruction.1234@yahoo.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:tskvconstruction@gmail.com?subject=${subject}&body=${body}`;
     contactForm.reset();
   });
 

@@ -87,6 +87,6 @@ git push -u origin main
 
 ## Contact
 
-- **Phone:** +91 4282 356 665 / +91 94438 89093
-- **Email:** tskvconstruction.1234@yahoo.com
+- **Phone:** +91 4282 356 665
+- **Email:** tskvconstruction@gmail.com
 - **Address:** 4/121, TSKV Illam, Kumbakottai, Perrapancholai (P.O), Rasipuram (T.K), Namakkal – 636113
