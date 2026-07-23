@@ -46,48 +46,20 @@
 
   window.addEventListener('scroll', updateActiveNav);
 
-  // Hero slider
+  // Hero background crossfade (content stays fixed)
   const slides = document.querySelectorAll('.hero__slide');
-  const dotsContainer = document.getElementById('heroDots');
-  const prevBtn = document.getElementById('heroPrev');
-  const nextBtn = document.getElementById('heroNext');
   let currentSlide = 0;
-  let slideInterval;
-
-  slides.forEach((_, i) => {
-    const dot = document.createElement('button');
-    dot.classList.add('hero__dot');
-    if (i === 0) dot.classList.add('active');
-    dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
-    dot.addEventListener('click', () => goToSlide(i));
-    dotsContainer.appendChild(dot);
-  });
-
-  const dots = dotsContainer.querySelectorAll('.hero__dot');
 
   function goToSlide(index) {
+    if (!slides.length) return;
     slides[currentSlide].classList.remove('active');
-    dots[currentSlide].classList.remove('active');
     currentSlide = (index + slides.length) % slides.length;
     slides[currentSlide].classList.add('active');
-    dots[currentSlide].classList.add('active');
   }
 
-  function nextSlide() { goToSlide(currentSlide + 1); }
-  function prevSlide() { goToSlide(currentSlide - 1); }
-
-  function startAutoSlide() {
-    slideInterval = setInterval(nextSlide, 6000);
+  if (slides.length > 1) {
+    setInterval(() => goToSlide(currentSlide + 1), 7000);
   }
-
-  function resetAutoSlide() {
-    clearInterval(slideInterval);
-    startAutoSlide();
-  }
-
-  prevBtn.addEventListener('click', () => { prevSlide(); resetAutoSlide(); });
-  nextBtn.addEventListener('click', () => { nextSlide(); resetAutoSlide(); });
-  startAutoSlide();
 
   // Stats counter animation
   const statsSection = document.querySelector('.stats');

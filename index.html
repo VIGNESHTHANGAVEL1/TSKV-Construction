@@ -43,66 +43,43 @@
 
   <!-- Hero Section -->
   <section class="hero" id="home">
-    <div class="hero__slider">
-      <div class="hero__slide active" style="background-image: url('assets/images/projects/project-26.png');">
-        <div class="hero__overlay"></div>
-        <div class="container hero__content">
-          <span class="hero__label">WELCOME TO</span>
-          <h1 class="hero__title">TSKV CONSTRUCTION<br><span>PRIVATE LIMITED</span></h1>
-          <p class="hero__subtitle">Engineering Excellence. Building Tomorrow.</p>
-          <p class="hero__desc">Building a better tomorrow with quality construction, innovative solutions and a commitment to excellence.</p>
-          <div class="hero__features">
-            <div class="hero__feature">
-              <i class="fas fa-hard-hat"></i>
-              <span>Quality Construction</span>
-            </div>
-            <div class="hero__feature">
-              <i class="fas fa-clock"></i>
-              <span>Timely Delivery</span>
-            </div>
-            <div class="hero__feature">
-              <i class="fas fa-smile"></i>
-              <span>Customer Satisfaction</span>
-            </div>
-          </div>
-          <div class="hero__actions">
-            <a href="#services" class="btn btn--primary">OUR SERVICES <i class="fas fa-arrow-right"></i></a>
-            <a href="#contact" class="btn btn--outline">CONTACT <i class="fas fa-envelope"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="hero__slide" style="background-image: url('assets/images/projects/project-25.png');">
-        <div class="hero__overlay"></div>
-        <div class="container hero__content">
-          <span class="hero__label">OUR EXPERTISE</span>
-          <h1 class="hero__title">WATER SUPPLY &<br><span>PIPELINE PROJECTS</span></h1>
-          <p class="hero__desc">Specializing in water supply works, UGSS, STP, WTP, storm water drains, and large-scale infrastructure development across India.</p>
-          <div class="hero__actions">
-            <a href="#services" class="btn btn--primary">OUR SERVICES <i class="fas fa-arrow-right"></i></a>
-            <a href="#contact" class="btn btn--outline">CONTACT <i class="fas fa-envelope"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="hero__slide" style="background-image: url('assets/images/projects/project-07.png');">
-        <div class="hero__overlay"></div>
-        <div class="container hero__content">
-          <span class="hero__label">INFRASTRUCTURE</span>
-          <h1 class="hero__title">STP, WTP &amp;<br><span>UGSS WORKS</span></h1>
-          <p class="hero__desc">Committed to quality, safety, and timely project delivery for government organizations and public sector undertakings.</p>
-          <div class="hero__actions">
-            <a href="#projects" class="btn btn--primary">VIEW PROJECTS <i class="fas fa-arrow-right"></i></a>
-            <a href="#contact" class="btn btn--outline">CONTACT <i class="fas fa-envelope"></i></a>
-          </div>
-        </div>
+    <div class="hero__media" aria-hidden="true">
+      <div class="hero__slide active" style="background-image: url('assets/images/projects/project-26.png');"></div>
+      <div class="hero__slide" style="background-image: url('assets/images/projects/project-25.png');"></div>
+      <div class="hero__slide" style="background-image: url('assets/images/projects/project-07.png');"></div>
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <span class="hero__label">WELCOME TO</span>
+      <h1 class="hero__title">TSKV Construction<br><span>Private Limited</span></h1>
+      <p class="hero__subtitle">Engineering Excellence. Building Tomorrow.</p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">OUR PROJECTS <i class="fas fa-arrow-right"></i></a>
+        <a href="#contact" class="btn btn--outline">CONTACT US <i class="fas fa-envelope"></i></a>
       </div>
     </div>
-    <button class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
-    <button class="hero__arrow hero__arrow--next" id="heroNext" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
-    <div class="hero__dots" id="heroDots"></div>
+    <div class="hero__features">
+      <div class="hero__feature">
+        <i class="fas fa-hard-hat"></i>
+        <span>Quality Construction</span>
+      </div>
+      <div class="hero__feature">
+        <i class="fas fa-clock"></i>
+        <span>Timely Delivery</span>
+      </div>
+      <div class="hero__feature">
+        <i class="fas fa-smile"></i>
+        <span>Customer Satisfaction</span>
+      </div>
+    </div>
+    <a href="#stats" class="hero__scroll" aria-label="Scroll to next section">
+      <span>Scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </a>
   </section>
 
   <!-- Stats Bar -->
-  <section class="stats">
+  <section class="stats" id="stats">
     <div class="container stats__grid">
       <div class="stats__item">
         <div class="stats__icon"><i class="fas fa-building"></i></div>
